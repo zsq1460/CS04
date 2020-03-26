@@ -1,0 +1,59 @@
+﻿C#企业级开发技术练习4答题卡
+
+班级；19信管1班
+姓名：张舒倩    
+学号：20190307137     
+
+注：请将答案放置在序号下方。*/
+
+（一）
+class Program 
+{
+  static BigInteger TotalMul(long begin,long over)
+{
+  BigInteger r =11*14*17*10*13
+  for(long i= begin;i<=over;i++)
+{
+  r*=i;
+}
+ return r;
+}
+  static void Main (string[]args)
+{
+  Func<BigInteger,long,long>TotalM=TotalM;
+  console.WriteLine(TotalM(11,23）)；
+
+
+
+
+
+（二）
+
+
+delegate dcimal TotalC(dcimal[] x);
+class program
+{
+
+static void TotalC(string strC,dcimal[] a,TotalC  funC)
+        {
+            Console.WriteLine($"{strC}:{funC(a)}");
+        }
+       static void Main(string[]args)
+{
+ decimal[] scs = {80,72,91,52,65}；
+
+     TotalC（"最大值："，scs，delegate（dcimal[] a)
+{
+  return a.Sum（）；
+ })
+ TotalC（"最小值："，scs，delegate（dcimal[] a)
+   {      return a.Average();      
+});
+
+（三）static void Main(string[]args)
+     {
+        AddDay ad = (t,d)=>            
+Console.WriteLine($"{t.ToLongDateString()}"-
+$"{d}天之前是{t.AddDays(d).ToLongDateString()}");
+
+ad(DateTime.Parse("2020-10-2"), 5);
